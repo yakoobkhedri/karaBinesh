@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>index</title>
+
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+
+  <!-- search modal -->
+
+  <div class="offcanvas offcanvas-top bg-white-80 h-650 max-w-1240 mx-auto rounded-b-50" tabindex="-1" id="offcanvasTop"
+    aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+    </div>
+    <div class="offcanvas-body px-md-5 mx-md-5 d-flex flex-column justify-content-end">
+      <form class="bg-white rounded-10 border-gray2 h-60 px-4 d-flex align-items-center gap-2 mb-5">
+        <input class="fs-20 fs-sm-16 w-100 flex-grow-1 border-0 outline-none" placeholder="What are you looking for?">
+        <svg class="flex-shrink-0 cursor-pointer" width="25" height="25" viewBox="0 0 25 25" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.7581 0.0309696C4.82576 0.0309696 0 4.8932 0 10.8703C0 16.8475 4.82576 21.7097 10.7581 21.7097C12.5716 21.7097 14.3543 21.2761 15.8605 20.44C15.9811 20.5862 16.1149 20.721 16.2601 20.8426L19.3338 23.9395C19.6176 24.2613 19.9637 24.5212 20.3508 24.7034C20.738 24.8855 21.158 24.986 21.585 24.9986C22.0121 25.0113 22.4372 24.9359 22.8343 24.777C23.2314 24.6181 23.5921 24.3792 23.8942 24.0748C24.1963 23.7704 24.4335 23.407 24.5912 23.0069C24.7489 22.6068 24.8237 22.1784 24.8111 21.7481C24.7986 21.3179 24.6988 20.8947 24.5181 20.5046C24.3373 20.1146 24.0793 19.7659 23.76 19.4799L20.6862 16.3829C20.5365 16.232 20.3717 16.0971 20.1944 15.9803C21.0243 14.4628 21.5469 12.6975 21.5469 10.8394C21.5469 4.86223 16.7211 0 10.7888 0L10.7581 0.0309696ZM10.7581 3.12793C15.0306 3.12793 18.4424 6.56556 18.4424 10.8703C18.4424 12.9143 17.7047 14.8035 16.4137 16.1971C16.383 16.2281 16.3523 16.2591 16.3215 16.29C16.1763 16.4116 16.0426 16.5463 15.9219 16.6926C14.5695 17.9314 12.7253 18.6437 10.7273 18.6437C6.45484 18.6437 3.043 15.2061 3.043 10.9013C3.043 6.59653 6.45484 3.1589 10.7273 3.1589L10.7581 3.12793Z"
+            fill="#3C3B3A" />
+          <script xmlns="" />
+        </svg>
+        <svg class="flex-shrink-0 cursor-pointer" width="25" height="25" viewBox="0 0 25 25" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0 20.3125L4.6875 25L12.4642 17.2233L20.2408 25L24.9283 20.3125L17.1517 12.5358L17.1875 12.5L17.1517 12.4642L24.9283 4.6875L20.2408 0L12.4642 7.77666L4.6875 0L0 4.6875L7.77666 12.4642L7.74082 12.5L7.77666 12.5358L0 20.3125Z"
+            fill="#3C3B3A" />
+          <script xmlns="" />
+        </svg>
+      </form>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="offcanvas offcanvas-start w-280" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-body">
+    <a class="mb-4 d-block"><img class="w-lg-90" alt="logo" src="images/990007A-Print-01 copy 32.PNG"></a>
+    <ul class="m-0 p-0 list-unstyled d-flex flex-column align-items-start gap-3 fs-14">
+      <li>
+        <a class="hover1 text-dark">Displays</a>
+      </li>
+      <li>
+        <a class="hover1 text-dark">POS Products and Accessories</a>
+      </li>
+      <li>
+        <a class="hover1 text-dark">About Us</a>
+      </li>
+      <li>
+        <a class="hover1 text-dark">Contact</a>
+      </li>
+      <li>
+        <a class="hover1 text-dark">Blog</a>
+      </li>
+      <li>
+        <a class="hover1 text-dark">Downloads</a>
+      </li>
+    </ul>
+    <div class="d-lg-none d-flex align-items-center gap-2 mt-4">
+      <a class="hover1">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.81583 0.09C10.4158 0.0166636 10.9258 0 15 0C19.075 0 19.5841 0.0174954 21.1833 0.09C22.7808 0.162505 23.8717 0.416673 24.8258 0.7875C25.8266 1.16429 26.7331 1.75465 27.4825 2.5175C28.2454 3.26673 28.8359 4.17336 29.2125 5.17417C29.5833 6.12833 29.8366 7.21917 29.91 8.81583C29.9834 10.4158 30 10.9258 30 15C30 19.0741 29.9825 19.5841 29.91 21.1842C29.8375 22.7808 29.5833 23.8717 29.2125 24.8258C28.8292 25.8117 28.3158 26.6491 27.4825 27.4825C26.7333 28.2454 25.8266 28.8359 24.8258 29.2125C23.8717 29.5833 22.7808 29.8366 21.1842 29.91C19.5841 29.9834 19.0741 30 15 30C10.9258 30 10.4158 29.9825 8.81583 29.91C7.21917 29.8375 6.12833 29.5833 5.17417 29.2125C4.18833 28.8292 3.35084 28.3158 2.5175 27.4825C1.75451 26.7333 1.16411 25.8266 0.7875 24.8258C0.416673 23.8717 0.163336 22.7808 0.09 21.1842C0.0166636 19.5841 0 19.075 0 15C0 10.925 0.0174954 10.4158 0.09 8.81667C0.162505 7.21917 0.416673 6.12833 0.7875 5.17417C1.16429 4.17342 1.75465 3.26684 2.5175 2.5175C3.26671 1.75451 4.17334 1.16411 5.17417 0.7875C6.12833 0.416673 7.21917 0.163336 8.81583 0.09ZM21.0616 2.79C19.48 2.71833 19.005 2.7025 15 2.7025C10.995 2.7025 10.52 2.71833 8.93834 2.79C7.47584 2.85667 6.68167 3.10083 6.15333 3.30667C5.45333 3.57833 4.95333 3.90333 4.42833 4.42833C3.90417 4.95333 3.57833 5.45333 3.30667 6.15333C3.10083 6.68167 2.85667 7.47584 2.79 8.93834C2.71833 10.52 2.7025 10.995 2.7025 15C2.7025 19.005 2.71833 19.48 2.79 21.0616C2.85667 22.5241 3.10083 23.3183 3.30667 23.8467C3.54697 24.4983 3.93026 25.0876 4.42833 25.5717C4.91228 26.0697 5.50174 26.453 6.15333 26.6933C6.68167 26.8992 7.47584 27.1433 8.93834 27.21C10.52 27.2817 10.9942 27.2975 15 27.2975C19.0058 27.2975 19.48 27.2817 21.0616 27.21C22.5241 27.1433 23.3183 26.8992 23.8467 26.6933C24.5467 26.4217 25.0467 26.0967 25.5717 25.5717C26.0697 25.0878 26.453 24.4983 26.6933 23.8467C26.8992 23.3183 27.1433 22.5241 27.21 21.0616C27.2817 19.48 27.2975 19.005 27.2975 15C27.2975 10.995 27.2817 10.52 27.21 8.93834C27.1433 7.47584 26.8992 6.68167 26.6933 6.15333C26.4217 5.45333 26.0967 4.95333 25.5717 4.42833C25.0467 3.90417 24.5467 3.57833 23.8467 3.30667C23.3183 3.10083 22.5241 2.85667 21.0616 2.79ZM13.0848 19.624C13.692 19.8755 14.3427 20.005 15 20.005C16.3275 20.005 17.6005 19.4776 18.539 18.539C19.4778 17.6005 20.0051 16.3274 20.0051 15C20.0051 13.6726 19.4778 12.3995 18.539 11.4609C17.6005 10.5223 16.3275 9.99499 15 9.99499C14.3427 9.99499 13.692 10.1245 13.0848 10.376C12.4774 10.6275 11.9257 10.9962 11.461 11.4609C10.9962 11.9257 10.6275 12.4774 10.376 13.0846C10.1245 13.6919 9.99505 14.3427 9.99505 15C9.99505 15.6573 10.1245 16.3081 10.376 16.9154C10.6275 17.5226 10.9962 18.0743 11.461 18.539C11.9257 19.0038 12.4774 19.3725 13.0848 19.624ZM9.54825 9.5482C10.9942 8.10229 12.9552 7.28999 15 7.28999C17.0449 7.28999 19.006 8.10229 20.4518 9.5482C21.8977 10.9941 22.71 12.9552 22.71 15C22.71 17.0448 21.8977 19.0058 20.4518 20.4518C19.006 21.8977 17.0449 22.71 15 22.71C12.9552 22.71 10.9942 21.8977 9.54825 20.4518C8.10235 19.0058 7.29004 17.0448 7.29004 15C7.29004 12.9552 8.10235 10.9941 9.54825 9.5482ZM24.4196 8.4387C24.7613 8.0969 24.9533 7.63335 24.9533 7.15C24.9533 6.66663 24.7613 6.20307 24.4196 5.86129C24.0777 5.51951 23.6142 5.3275 23.1308 5.3275C22.6475 5.3275 22.1839 5.51951 21.8422 5.86129C21.5003 6.20307 21.3083 6.66663 21.3083 7.15C21.3083 7.63335 21.5003 8.0969 21.8422 8.4387C22.1839 8.78048 22.6475 8.9725 23.1308 8.9725C23.6142 8.9725 24.0777 8.78048 24.4196 8.4387Z"
+            fill="black" fill-opacity="0.72"></path>
+          <script xmlns=""></script>
+        </svg>
+      </a>
+      <a class="hover1">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0 2.50625C0 1.84155 0.264053 1.20408 0.734065 0.734065C1.20408 0.264053 1.84155 0 2.50625 0H27.4937C27.8229 0 28.1488 0.0648302 28.4527 0.190781C28.7569 0.316733 29.0331 0.501336 29.2659 0.734065C29.4986 0.966794 29.6832 1.24308 29.8092 1.54714C29.9351 1.85122 30 2.17712 30 2.50625V27.4937C30 27.8229 29.9351 28.1488 29.8092 28.4527C29.6832 28.7569 29.4986 29.0331 29.2659 29.2659C29.0331 29.4986 28.7569 29.6832 28.4527 29.8092C28.1488 29.9351 27.8229 30 27.4937 30H2.50625C1.84155 30 1.20408 29.7359 0.734065 29.2659C0.264053 28.7959 0 28.1585 0 27.4937V2.50625ZM11.875 11.4375H15.9375V13.4788C16.5231 12.3049 18.0237 11.25 20.2781 11.25C24.5993 11.25 25.625 13.5863 25.625 17.873V25.8125H21.25V18.8493C21.25 16.4082 20.6644 15.0312 19.175 15.0312C17.1094 15.0312 16.25 16.5156 16.25 18.8493V25.8125H11.875V11.4375ZM4.37499 25.625H8.74999V11.25H4.37499V25.625ZM9.37499 6.56248C9.37499 6.93183 9.30224 7.29756 9.1609 7.63878C9.01956 7.98001 8.81238 8.29006 8.55122 8.55122C8.29006 8.81238 7.98001 9.01956 7.63878 9.1609C7.29756 9.30224 6.93183 9.37499 6.56248 9.37499C6.19315 9.37499 5.82742 9.30224 5.4862 9.1609C5.14496 9.01956 4.83492 8.81238 4.57375 8.55122C4.31259 8.29006 4.10543 7.98001 3.96408 7.63878C3.82275 7.29756 3.74999 6.93183 3.74999 6.56248C3.74999 5.81657 4.04631 5.1012 4.57375 4.57375C5.1012 4.04631 5.81657 3.74999 6.56248 3.74999C7.30841 3.74999 8.02378 4.04631 8.55122 4.57375C9.07867 5.1012 9.37499 5.81657 9.37499 6.56248Z"
+            fill="black" fill-opacity="0.72"></path>
+          <script xmlns=""></script>
+        </svg>
+      </a>
+      <a class="hover1">
+        <svg width="45" height="30" viewBox="0 0 45 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M44.0354 4.70482C43.7877 3.80696 43.2932 2.98606 42.6016 2.32442C41.9097 1.66278 41.0451 1.18366 40.0942 0.935071C36.5752 0.00916047 22.4758 0.00916023 22.4758 0.00916023C16.5967 -0.0572305 10.7192 0.237321 4.88091 0.890979C3.92964 1.15772 3.06641 1.64789 2.37271 2.3152C1.67902 2.9825 1.17774 3.80492 0.916193 4.70482C0.285443 8.10409 -0.0207523 11.5496 0.00125847 14.9999C-0.0222616 18.4505 0.283946 21.8961 0.916193 25.2953C1.17236 26.1927 1.67256 27.0121 2.36767 27.6732C3.06278 28.3341 3.92888 28.8136 4.88091 29.0649C8.44682 29.9908 22.4758 29.9908 22.4758 29.9908C28.3627 30.0573 34.2481 29.7628 40.0942 29.109C41.0451 28.8605 41.9097 28.3814 42.6016 27.7197C43.2932 27.058 43.7877 26.2371 44.0354 25.3393C44.6823 21.9417 44.9964 18.4956 44.9739 15.0442C45.0224 11.5772 44.708 8.11403 44.0354 4.70482ZM17.995 21.4153V8.58481L29.725 14.9999L17.995 21.4153Z"
+            fill="black" fill-opacity="0.72"></path>
+          <script xmlns=""></script>
+        </svg>
+      </a>
+      <a class="hover1">
+        <svg width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M36.9123 3.55208C35.5549 4.15357 34.0967 4.55999 32.5637 4.74369C34.1276 3.80731 35.3273 2.32145 35.893 0.552726C34.4299 1.42083 32.8091 2.05159 31.0843 2.38973C29.7025 0.920126 27.7354 0 25.5571 0C21.3758 0 17.9847 3.39114 17.9847 7.5756C17.9847 8.16734 18.053 8.74282 18.1798 9.2988C11.8836 8.9818 6.30595 5.96619 2.57017 1.38507C1.91991 2.50678 1.546 3.80731 1.546 5.19237C1.546 7.81945 2.88393 10.1393 4.91438 11.4967C3.67237 11.4561 2.50515 11.1163 1.48423 10.5489V10.6465C1.48423 14.3156 4.09342 17.3767 7.55934 18.0725C6.92208 18.2448 6.25393 18.3359 5.56465 18.3359C5.07695 18.3359 4.60063 18.2903 4.13894 18.2026C5.10296 21.21 7.8991 23.4014 11.2138 23.46C8.6209 25.492 5.35494 26.7032 1.80774 26.7032C1.19649 26.7032 0.593364 26.6674 0 26.5975C3.35212 28.7482 7.33174 30 11.6072 30C25.5392 30 33.1554 18.461 33.1554 8.45346C33.1554 8.12832 33.1473 7.79994 33.1327 7.47481C34.612 6.40512 35.8963 5.0737 36.9091 3.55695L36.9123 3.55208Z"
+            fill="black" fill-opacity="0.72"></path>
+          <script xmlns=""></script>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+  <header class="z-10">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between gap-2">
+        <a class="-mb-27 d-block"><img class="w-lg-90" alt="logo" src="images/990007A-Print-01 copy 3.png"></a>
+        <ul class="m-0 p-0 list-unstyled d-xl-flex d-none align-items-center gap-3 fs-14">
+          <li>
+            <a class="hover1 text-dark">Displays</a>
+          </li>
+          <li>
+            <a class="hover1 text-dark">POS Products and Accessories</a>
+          </li>
+          <li>
+            <a class="hover1 text-dark">About Us</a>
+          </li>
+          <li>
+            <a class="hover1 text-dark">Contact</a>
+          </li>
+          <li>
+            <a class="hover1 text-dark">Blog</a>
+          </li>
+          <li>
+            <a class="hover1 text-dark">Downloads</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-xl-4 gap-sm-3 gap-2">
+          <div class="d-lg-flex d-none align-items-center gap-2 me-xl-4">
+            <a class="hover1">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.81583 0.09C10.4158 0.0166636 10.9258 0 15 0C19.075 0 19.5841 0.0174954 21.1833 0.09C22.7808 0.162505 23.8717 0.416673 24.8258 0.7875C25.8266 1.16429 26.7331 1.75465 27.4825 2.5175C28.2454 3.26673 28.8359 4.17336 29.2125 5.17417C29.5833 6.12833 29.8366 7.21917 29.91 8.81583C29.9834 10.4158 30 10.9258 30 15C30 19.0741 29.9825 19.5841 29.91 21.1842C29.8375 22.7808 29.5833 23.8717 29.2125 24.8258C28.8292 25.8117 28.3158 26.6491 27.4825 27.4825C26.7333 28.2454 25.8266 28.8359 24.8258 29.2125C23.8717 29.5833 22.7808 29.8366 21.1842 29.91C19.5841 29.9834 19.0741 30 15 30C10.9258 30 10.4158 29.9825 8.81583 29.91C7.21917 29.8375 6.12833 29.5833 5.17417 29.2125C4.18833 28.8292 3.35084 28.3158 2.5175 27.4825C1.75451 26.7333 1.16411 25.8266 0.7875 24.8258C0.416673 23.8717 0.163336 22.7808 0.09 21.1842C0.0166636 19.5841 0 19.075 0 15C0 10.925 0.0174954 10.4158 0.09 8.81667C0.162505 7.21917 0.416673 6.12833 0.7875 5.17417C1.16429 4.17342 1.75465 3.26684 2.5175 2.5175C3.26671 1.75451 4.17334 1.16411 5.17417 0.7875C6.12833 0.416673 7.21917 0.163336 8.81583 0.09ZM21.0616 2.79C19.48 2.71833 19.005 2.7025 15 2.7025C10.995 2.7025 10.52 2.71833 8.93834 2.79C7.47584 2.85667 6.68167 3.10083 6.15333 3.30667C5.45333 3.57833 4.95333 3.90333 4.42833 4.42833C3.90417 4.95333 3.57833 5.45333 3.30667 6.15333C3.10083 6.68167 2.85667 7.47584 2.79 8.93834C2.71833 10.52 2.7025 10.995 2.7025 15C2.7025 19.005 2.71833 19.48 2.79 21.0616C2.85667 22.5241 3.10083 23.3183 3.30667 23.8467C3.54697 24.4983 3.93026 25.0876 4.42833 25.5717C4.91228 26.0697 5.50174 26.453 6.15333 26.6933C6.68167 26.8992 7.47584 27.1433 8.93834 27.21C10.52 27.2817 10.9942 27.2975 15 27.2975C19.0058 27.2975 19.48 27.2817 21.0616 27.21C22.5241 27.1433 23.3183 26.8992 23.8467 26.6933C24.5467 26.4217 25.0467 26.0967 25.5717 25.5717C26.0697 25.0878 26.453 24.4983 26.6933 23.8467C26.8992 23.3183 27.1433 22.5241 27.21 21.0616C27.2817 19.48 27.2975 19.005 27.2975 15C27.2975 10.995 27.2817 10.52 27.21 8.93834C27.1433 7.47584 26.8992 6.68167 26.6933 6.15333C26.4217 5.45333 26.0967 4.95333 25.5717 4.42833C25.0467 3.90417 24.5467 3.57833 23.8467 3.30667C23.3183 3.10083 22.5241 2.85667 21.0616 2.79ZM13.0848 19.624C13.692 19.8755 14.3427 20.005 15 20.005C16.3275 20.005 17.6005 19.4776 18.539 18.539C19.4778 17.6005 20.0051 16.3274 20.0051 15C20.0051 13.6726 19.4778 12.3995 18.539 11.4609C17.6005 10.5223 16.3275 9.99499 15 9.99499C14.3427 9.99499 13.692 10.1245 13.0848 10.376C12.4774 10.6275 11.9257 10.9962 11.461 11.4609C10.9962 11.9257 10.6275 12.4774 10.376 13.0846C10.1245 13.6919 9.99505 14.3427 9.99505 15C9.99505 15.6573 10.1245 16.3081 10.376 16.9154C10.6275 17.5226 10.9962 18.0743 11.461 18.539C11.9257 19.0038 12.4774 19.3725 13.0848 19.624ZM9.54825 9.5482C10.9942 8.10229 12.9552 7.28999 15 7.28999C17.0449 7.28999 19.006 8.10229 20.4518 9.5482C21.8977 10.9941 22.71 12.9552 22.71 15C22.71 17.0448 21.8977 19.0058 20.4518 20.4518C19.006 21.8977 17.0449 22.71 15 22.71C12.9552 22.71 10.9942 21.8977 9.54825 20.4518C8.10235 19.0058 7.29004 17.0448 7.29004 15C7.29004 12.9552 8.10235 10.9941 9.54825 9.5482ZM24.4196 8.4387C24.7613 8.0969 24.9533 7.63335 24.9533 7.15C24.9533 6.66663 24.7613 6.20307 24.4196 5.86129C24.0777 5.51951 23.6142 5.3275 23.1308 5.3275C22.6475 5.3275 22.1839 5.51951 21.8422 5.86129C21.5003 6.20307 21.3083 6.66663 21.3083 7.15C21.3083 7.63335 21.5003 8.0969 21.8422 8.4387C22.1839 8.78048 22.6475 8.9725 23.1308 8.9725C23.6142 8.9725 24.0777 8.78048 24.4196 8.4387Z"
+                  fill="black" fill-opacity="0.72" />
+                <script xmlns="" />
+              </svg>
+            </a>
+            <a class="hover1">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 2.50625C0 1.84155 0.264053 1.20408 0.734065 0.734065C1.20408 0.264053 1.84155 0 2.50625 0H27.4937C27.8229 0 28.1488 0.0648302 28.4527 0.190781C28.7569 0.316733 29.0331 0.501336 29.2659 0.734065C29.4986 0.966794 29.6832 1.24308 29.8092 1.54714C29.9351 1.85122 30 2.17712 30 2.50625V27.4937C30 27.8229 29.9351 28.1488 29.8092 28.4527C29.6832 28.7569 29.4986 29.0331 29.2659 29.2659C29.0331 29.4986 28.7569 29.6832 28.4527 29.8092C28.1488 29.9351 27.8229 30 27.4937 30H2.50625C1.84155 30 1.20408 29.7359 0.734065 29.2659C0.264053 28.7959 0 28.1585 0 27.4937V2.50625ZM11.875 11.4375H15.9375V13.4788C16.5231 12.3049 18.0237 11.25 20.2781 11.25C24.5993 11.25 25.625 13.5863 25.625 17.873V25.8125H21.25V18.8493C21.25 16.4082 20.6644 15.0312 19.175 15.0312C17.1094 15.0312 16.25 16.5156 16.25 18.8493V25.8125H11.875V11.4375ZM4.37499 25.625H8.74999V11.25H4.37499V25.625ZM9.37499 6.56248C9.37499 6.93183 9.30224 7.29756 9.1609 7.63878C9.01956 7.98001 8.81238 8.29006 8.55122 8.55122C8.29006 8.81238 7.98001 9.01956 7.63878 9.1609C7.29756 9.30224 6.93183 9.37499 6.56248 9.37499C6.19315 9.37499 5.82742 9.30224 5.4862 9.1609C5.14496 9.01956 4.83492 8.81238 4.57375 8.55122C4.31259 8.29006 4.10543 7.98001 3.96408 7.63878C3.82275 7.29756 3.74999 6.93183 3.74999 6.56248C3.74999 5.81657 4.04631 5.1012 4.57375 4.57375C5.1012 4.04631 5.81657 3.74999 6.56248 3.74999C7.30841 3.74999 8.02378 4.04631 8.55122 4.57375C9.07867 5.1012 9.37499 5.81657 9.37499 6.56248Z"
+                  fill="black" fill-opacity="0.72" />
+                <script xmlns="" />
+              </svg>
+            </a>
+            <a class="hover1">
+              <svg width="45" height="30" viewBox="0 0 45 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M44.0354 4.70482C43.7877 3.80696 43.2932 2.98606 42.6016 2.32442C41.9097 1.66278 41.0451 1.18366 40.0942 0.935071C36.5752 0.00916047 22.4758 0.00916023 22.4758 0.00916023C16.5967 -0.0572305 10.7192 0.237321 4.88091 0.890979C3.92964 1.15772 3.06641 1.64789 2.37271 2.3152C1.67902 2.9825 1.17774 3.80492 0.916193 4.70482C0.285443 8.10409 -0.0207523 11.5496 0.00125847 14.9999C-0.0222616 18.4505 0.283946 21.8961 0.916193 25.2953C1.17236 26.1927 1.67256 27.0121 2.36767 27.6732C3.06278 28.3341 3.92888 28.8136 4.88091 29.0649C8.44682 29.9908 22.4758 29.9908 22.4758 29.9908C28.3627 30.0573 34.2481 29.7628 40.0942 29.109C41.0451 28.8605 41.9097 28.3814 42.6016 27.7197C43.2932 27.058 43.7877 26.2371 44.0354 25.3393C44.6823 21.9417 44.9964 18.4956 44.9739 15.0442C45.0224 11.5772 44.708 8.11403 44.0354 4.70482ZM17.995 21.4153V8.58481L29.725 14.9999L17.995 21.4153Z"
+                  fill="black" fill-opacity="0.72" />
+                <script xmlns="" />
+              </svg>
+            </a>
+            <a class="hover1">
+              <svg width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M36.9123 3.55208C35.5549 4.15357 34.0967 4.55999 32.5637 4.74369C34.1276 3.80731 35.3273 2.32145 35.893 0.552726C34.4299 1.42083 32.8091 2.05159 31.0843 2.38973C29.7025 0.920126 27.7354 0 25.5571 0C21.3758 0 17.9847 3.39114 17.9847 7.5756C17.9847 8.16734 18.053 8.74282 18.1798 9.2988C11.8836 8.9818 6.30595 5.96619 2.57017 1.38507C1.91991 2.50678 1.546 3.80731 1.546 5.19237C1.546 7.81945 2.88393 10.1393 4.91438 11.4967C3.67237 11.4561 2.50515 11.1163 1.48423 10.5489V10.6465C1.48423 14.3156 4.09342 17.3767 7.55934 18.0725C6.92208 18.2448 6.25393 18.3359 5.56465 18.3359C5.07695 18.3359 4.60063 18.2903 4.13894 18.2026C5.10296 21.21 7.8991 23.4014 11.2138 23.46C8.6209 25.492 5.35494 26.7032 1.80774 26.7032C1.19649 26.7032 0.593364 26.6674 0 26.5975C3.35212 28.7482 7.33174 30 11.6072 30C25.5392 30 33.1554 18.461 33.1554 8.45346C33.1554 8.12832 33.1473 7.79994 33.1327 7.47481C34.612 6.40512 35.8963 5.0737 36.9091 3.55695L36.9123 3.55208Z"
+                  fill="black" fill-opacity="0.72" />
+                <script xmlns="" />
+              </svg>
+            </a>
+          </div>
+          <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
+            class="w-101 h-40 bg-white-50 border-black cursor-pointer rounded-10 d-flex align-items-center justify-content-center gap-1">
+            <p class="mb-0">Search</p>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.7581 0.0309696C4.82576 0.0309696 0 4.8932 0 10.8703C0 16.8475 4.82576 21.7097 10.7581 21.7097C12.5716 21.7097 14.3543 21.2761 15.8605 20.44C15.9811 20.5862 16.1149 20.721 16.2601 20.8426L19.3338 23.9395C19.6176 24.2613 19.9637 24.5212 20.3508 24.7034C20.738 24.8855 21.158 24.986 21.585 24.9986C22.0121 25.0113 22.4372 24.9359 22.8343 24.777C23.2314 24.6181 23.5921 24.3792 23.8942 24.0748C24.1963 23.7704 24.4335 23.407 24.5912 23.0069C24.7489 22.6068 24.8237 22.1784 24.8111 21.7481C24.7986 21.3179 24.6988 20.8947 24.5181 20.5046C24.3373 20.1146 24.0793 19.7659 23.76 19.4799L20.6862 16.3829C20.5365 16.232 20.3717 16.0971 20.1944 15.9803C21.0243 14.4628 21.5469 12.6975 21.5469 10.8394C21.5469 4.86223 16.7211 0 10.7888 0L10.7581 0.0309696ZM10.7581 3.12793C15.0306 3.12793 18.4424 6.56556 18.4424 10.8703C18.4424 12.9143 17.7047 14.8035 16.4137 16.1971C16.383 16.2281 16.3523 16.2591 16.3215 16.29C16.1763 16.4116 16.0426 16.5463 15.9219 16.6926C14.5695 17.9314 12.7253 18.6437 10.7273 18.6437C6.45484 18.6437 3.043 15.2061 3.043 10.9013C3.043 6.59653 6.45484 3.1589 10.7273 3.1589L10.7581 3.12793Z"
+                fill="#3C3B3A" />
+              <script xmlns="" />
+            </svg>
+          </div>
+          <a class="btn border-black rounded-10 bg-white-50">Persian</a>
+          <svg data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi bi-list-columns-reverse d-xl-none cursor-pointer flex-shrink-0" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M0 .5A.5.5 0 0 1 .5 0h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 .5m4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10A.5.5 0 0 1 4 .5m-4 2A.5.5 0 0 1 .5 2h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-4 2A.5.5 0 0 1 .5 4h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m-4 2A.5.5 0 0 1 .5 6h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m-4 2A.5.5 0 0 1 .5 8h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5m-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="-mt-166">
+      <div>
+        <div class="swiper banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide position-relative overlay">
+              <img alt="img" src="images/45428_1620x1080 1.png" class="w-100 h-lg-540 object-cover">
+              <div
+                class="data_imagesContBottomTop position-absolute bottom-0 top-0 top-lg-auto start-0 mb-lg-84 my-lg-auto mx-sm-5 mx-4 d-flex flex-column justify-content-center z-10">
+                <div>
+                  <p class="text-white fs-10">NEW IN TOWN</p>
+                  <h1 class="text-white fw-bold">The New Beauty Collection</h1>
+                  <p class="text-white mb-5">
+                    This new collection brings with it the most exciting lorem ipsum dolor sit amet.
+                  </p>
+                  <a class="btn bg-white fw-bold hover2">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide position-relative overlay">
+              <img alt="img" src="images/45428_1620x1080 1.png" class="w-100 h-lg-540 object-cover">
+              <div
+                class="data_imagesContBottomTop position-absolute bottom-0 top-0 top-lg-auto start-0 mb-lg-84 my-lg-auto mx-sm-5 mx-4 d-flex flex-column justify-content-center z-10">
+                <div>
+                  <p class="text-white fs-10">NEW IN TOWN</p>
+                  <h1 class="text-white fw-bold">The New Beauty Collection</h1>
+                  <p class="text-white mb-5">
+                    This new collection brings with it the most exciting lorem ipsum dolor sit amet.
+                  </p>
+                  <a class="btn bg-white fw-bold hover2">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide position-relative overlay">
+              <img alt="img" src="images/45428_1620x1080 1.png" class="w-100 h-lg-540 object-cover">
+              <div
+                class="data_imagesContBottomTop position-absolute bottom-0 top-0 top-lg-auto start-0 mb-lg-84 my-lg-auto mx-sm-5 mx-4 d-flex flex-column justify-content-center z-10">
+                <div>
+                  <p class="text-white fs-10">NEW IN TOWN</p>
+                  <h1 class="text-white fw-bold">The New Beauty Collection</h1>
+                  <p class="text-white mb-5">
+                    This new collection brings with it the most exciting lorem ipsum dolor sit amet.
+                  </p>
+                  <a class="btn bg-white fw-bold hover2">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide position-relative overlay">
+              <img alt="img" src="images/45428_1620x1080 1.png" class="w-100 h-lg-540 object-cover">
+              <div
+                class="data_imagesContBottomTop position-absolute bottom-0 top-0 top-lg-auto start-0 mb-lg-84 my-lg-auto mx-sm-5 mx-4 d-flex flex-column justify-content-center z-10">
+                <div>
+                  <p class="text-white fs-10">NEW IN TOWN</p>
+                  <h1 class="text-white fw-bold">The New Beauty Collection</h1>
+                  <p class="text-white mb-5">
+                    This new collection brings with it the most exciting lorem ipsum dolor sit amet.
+                  </p>
+                  <a class="btn bg-white fw-bold hover2">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide position-relative overlay">
+              <img alt="img" src="images/45428_1620x1080 1.png" class="w-100 h-lg-540 object-cover">
+              <div
+                class="data_imagesContBottomTop position-absolute bottom-0 top-0 top-lg-auto start-0 mb-lg-84 my-lg-auto mx-sm-5 mx-4 d-flex flex-column justify-content-center z-10">
+                <div>
+                  <p class="text-white fs-10">NEW IN TOWN</p>
+                  <h1 class="text-white fw-bold">The New Beauty Collection</h1>
+                  <p class="text-white mb-5">
+                    This new collection brings with it the most exciting lorem ipsum dolor sit amet.
+                  </p>
+                  <a class="btn bg-white fw-bold hover2">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide position-relative overlay">
+              <img alt="img" src="images/45428_1620x1080 1.png" class="w-100 h-lg-540 object-cover">
+              <div
+                class="data_imagesContBottomTop position-absolute bottom-0 top-0 top-lg-auto start-0 mb-lg-84 my-lg-auto mx-sm-5 mx-4 d-flex flex-column justify-content-center z-10">
+                <div>
+                  <p class="text-white fs-10">NEW IN TOWN</p>
+                  <h1 class="text-white fw-bold">The New Beauty Collection</h1>
+                  <p class="text-white mb-5">
+                    This new collection brings with it the most exciting lorem ipsum dolor sit amet.
+                  </p>
+                  <a class="btn bg-white fw-bold hover2">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide position-relative overlay">
+              <img alt="img" src="images/45428_1620x1080 1.png" class="w-100 h-lg-540 object-cover">
+              <div
+                class="data_imagesContBottomTop position-absolute bottom-0 top-0 top-lg-auto start-0 mb-lg-84 my-lg-auto mx-sm-5 mx-4 d-flex flex-column justify-content-center z-10">
+                <div>
+                  <p class="text-white fs-10">NEW IN TOWN</p>
+                  <h1 class="text-white fw-bold">The New Beauty Collection</h1>
+                  <p class="text-white mb-5">
+                    This new collection brings with it the most exciting lorem ipsum dolor sit amet.
+                  </p>
+                  <a class="btn bg-white fw-bold hover2">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="position-absolute px-3 h-60 w-100 max-w-1000 d-flex align-items-center justify-content-end gap-sm-20 gap-60 bg-black bottom-0 start-0 z-10">
+            <div class="d-flex align-items-center gap-3 fs-20 fw-bold numbers">
+              <div class="text-gray cursor-pointer active" data-slide="0">1</div>
+              <div class="text-gray cursor-pointer" data-slide="1">2</div>
+              <div class="text-gray cursor-pointer" data-slide="2">3</div>
+              <div class="text-gray cursor-pointer" data-slide="3">4</div>
+              <div class="text-gray cursor-pointer" data-slide="4">5</div>
+              <div class="text-gray cursor-pointer" data-slide="5">6</div>
+              <div class="text-gray cursor-pointer" data-slide="6">7</div>
+            </div>
+            <div class="d-flex align-items-center gap-40">
+              <svg class="cursor-pointer prevBtn" width="21" height="30" viewBox="0 0 21 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5752 0L0 15L14.5752 30L20.0409 24.375L10.9314 15L20.0409 5.625L14.5752 0Z"
+                  fill="#D9D9D9" />
+              </svg>
+              <svg class="cursor-pointer nextBtn" width="21" height="30" viewBox="0 0 21 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.58281 0L0 5.625L9.30469 15L0 24.375L5.58281 30L20.4703 15L5.58281 0Z" fill="#D9D9D9" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-44">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="card rounded-16 border-gray shadow-1 position-relative overflow-hidden">
+              <img alt="img" src="images/Rectangle 36.png" class="w-100 h-280 h-md-auto">
+              <div class="fw-bold text-white bg-black px-3 py-3 position-absolute bottom-0 end-0 start-0">Floor Display
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="card rounded-16 border-gray shadow-1 position-relative overflow-hidden">
+              <img alt="img" src="images/Rectangle 37.png" class="w-100 h-280 h-md-auto">
+              <div class="fw-bold text-white bg-black px-3 py-3 position-absolute bottom-0 end-0 start-0">Counter
+                Display
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="card rounded-16 border-gray shadow-1 position-relative overflow-hidden">
+              <img alt="img" src="images/Rectangle 38.png" class="w-100 h-280 h-md-auto">
+              <div class="fw-bold text-white bg-black px-3 py-3 position-absolute bottom-0 end-0 start-0">Middle Area
+                Display</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="card rounded-16 border-gray shadow-1 position-relative overflow-hidden">
+              <img alt="img" src="images/Rectangle 39.png" class="w-100 h-280 h-md-auto">
+              <div class="fw-bold text-white bg-black px-3 py-3 position-absolute bottom-0 end-0 start-0">Gondola</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="card rounded-16 border-gray shadow-1 position-relative overflow-hidden">
+              <img alt="img" src="images/Rectangle 43.png" class="w-100 h-280 h-md-auto">
+              <div class="fw-bold text-white bg-black px-3 py-3 position-absolute bottom-0 end-0 start-0">Hanging
+                Display
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="card rounded-16 border-gray shadow-1 position-relative overflow-hidden">
+              <img alt="img" src="images/Rectangle 42.png" class="w-100 h-280 h-md-auto">
+              <div class="fw-bold text-white bg-black px-3 py-3 position-absolute bottom-0 end-0 start-0">POS Shelf
+                Accessories</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="card rounded-16 border-gray shadow-1 position-relative overflow-hidden">
+              <img alt="img" src="images/Rectangle 41.png" class="w-100 h-280 h-md-auto">
+              <div class="fw-bold text-white bg-black px-3 py-3 position-absolute bottom-0 end-0 start-0">Promotion
+                Display</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="card rounded-16 border-gray shadow-1 position-relative overflow-hidden">
+              <img alt="img" src="images/Rectangle 40.png" class="w-100 h-280 h-md-auto">
+              <div class="fw-bold text-white bg-black px-3 py-3 position-absolute bottom-0 end-0 start-0">Plastic
+                Modular
+                Displayn</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card rounded-16 border-gray shadow-1 position-relative overflow-hidden">
+              <img alt="img" src="images/Rectangle 24.png" class="w-100 h-280 object-cover">
+              <div class="fw-bold text-white bg-black px-3 py-3 position-absolute bottom-0 end-0 start-0">Podium
+                Display,
+                Pallet Display, Dump Bin</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="container">
+        <div class="swiper company">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img alt="img" src="images/active 1.png" class="w-100">
+            </div>
+            <div class="swiper-slide">
+              <img alt="img" src="images/artline 1.png" class="w-100">
+            </div>
+            <div class="swiper-slide">
+              <img alt="img" src="images/bic-1 1.png" class="w-100">
+            </div>
+            <div class="swiper-slide">
+              <img alt="img" src="images/ellite 1.png" class="w-100">
+            </div>
+            <div class="swiper-slide">
+              <img alt="img" src="images/famila 1.png" class="w-100">
+            </div>
+            <div class="swiper-slide">
+              <img alt="img" src="images/kalle 1.png" class="w-100">
+            </div>
+            <div class="swiper-slide">
+              <img alt="img" src="images/zar macaron 1.png" class="w-100">
+            </div>
+            <div class="swiper-slide">
+              <img alt="img" src="images/famila 1.png" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5 py-5 fixedbg overlay">
+      <div>
+        <div class="swiper banner4 position-relative z-10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide position-relative">
+              <div class="data_imagesContBottomTop d-flex flex-column justify-content-center z-10 m-sm-5 m-4">
+                <div>
+                  <p class="text-white fs-10">NEW IN TOWN</p>
+                  <h1 class="text-white fw-bold">The New Beauty Collection</h1>
+                  <p class="text-white mb-5">
+                    This new collection brings with it the most exciting lorem ipsum dolor sit amet.
+                  </p>
+                  <a class="btn bg-white fw-bold hover2">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide position-relative">
+              <div class="data_imagesContBottomTop d-flex flex-column justify-content-center z-10 m-sm-5 m-4">
+                <div>
+                  <p class="text-white fs-10">NEW IN TOWN</p>
+                  <h1 class="text-white fw-bold">The New Beauty Collection</h1>
+                  <p class="text-white mb-5">
+                    This new collection brings with it the most exciting lorem ipsum dolor sit amet.
+                  </p>
+                  <a class="btn bg-white fw-bold hover2">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-50">
+      <div>
+        <div class="swiper banner2 position-relative">
+          <div class="position-absolute start-0 bottom-0 top-0 bg-gray-90 col-sm-6 col-10 lh-20 fs-14 z-10">
+            <p class="mb-0 max-w-380 mt-5 pt-5 p-4 text-justify fw-bold ms-auto">
+              We try to take an effective and efficient step towards increasing the sale of your goods by researching
+              and examining the retail market and providing smart solutions in the field of POSM. By designing and
+              producing all kinds of Displays, including Floor display, Gondola, Counter display, promotion display,
+              dump bins, counter sampling, all kinds of promotional tools related to the shelf, etc., Karabinesh offers
+              comprehensive services in the the POSM field.
+            </p>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/2 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/2 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/2 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/2 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/2 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/2 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/2 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+          </div>
+          <div
+            class="position-absolute px-3 h-60 w-100 max-w-1000 d-flex align-items-center justify-content-end gap-sm-20 gap-60 bg-black top-0 end-0 z-10">
+            <p class="fw-bold text-white fs-30 fs-sm-22 me-auto mb-0">Who We Are</p>
+            <div class="d-md-flex d-none align-items-center gap-3 fs-20 fw-bold numbers2">
+              <div class="text-gray cursor-pointer active" data-number="0">1</div>
+              <div class="text-gray cursor-pointer" data-number="1">2</div>
+              <div class="text-gray cursor-pointer" data-number="2">3</div>
+              <div class="text-gray cursor-pointer" data-number="3">4</div>
+              <div class="text-gray cursor-pointer" data-number="4">5</div>
+              <div class="text-gray cursor-pointer" data-number="5">6</div>
+              <div class="text-gray cursor-pointer" data-number="6">7</div>
+            </div>
+            <div class="d-flex align-items-center gap-40">
+              <svg class="cursor-pointer prevBtn2" width="21" height="30" viewBox="0 0 21 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5752 0L0 15L14.5752 30L20.0409 24.375L10.9314 15L20.0409 5.625L14.5752 0Z"
+                  fill="#D9D9D9" />
+              </svg>
+              <svg class="cursor-pointer nextBtn2" width="21" height="30" viewBox="0 0 21 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.58281 0L0 5.625L9.30469 15L0 24.375L5.58281 30L20.4703 15L5.58281 0Z" fill="#D9D9D9" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-50">
+      <div>
+        <div class="swiper banner3 position-relative">
+          <div class="position-absolute end-0 bottom-0 top-0 bg-gray-90 col-sm-6 col-10 lh-20 fs-14 z-10">
+            <p class="mb-0 mt-5 pt-5 p-4 text-justify fw-bold ms-auto">
+              We try to take an effective and efficient step towards increasing the sale of your goods by researching
+              and examining the retail market and providing smart solutions in the field of POSM. By designing and
+              producing all kinds of Displays, including Floor display, Gondola, Counter display, promotion display,
+              dump bins, counter sampling, all kinds of promotional tools related to the shelf, etc., Karabinesh offers
+              comprehensive services in the the POSM field.
+            </p>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/ZJX75B4JYFOHFIMJZLEGNSBKHU 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/ZJX75B4JYFOHFIMJZLEGNSBKHU 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/ZJX75B4JYFOHFIMJZLEGNSBKHU 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/ZJX75B4JYFOHFIMJZLEGNSBKHU 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/ZJX75B4JYFOHFIMJZLEGNSBKHU 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/ZJX75B4JYFOHFIMJZLEGNSBKHU 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+            <div class="swiper-slide position-relative">
+              <img alt="img" src="images/ZJX75B4JYFOHFIMJZLEGNSBKHU 1.png" class="w-100 h-lg-428 object-cover">
+            </div>
+          </div>
+          <div
+            class="position-absolute px-3 h-60 w-100 max-w-1000 d-flex align-items-center justify-content-end gap-sm-20 gap-60 bg-black top-0 start-0 z-10">
+            <p class="fw-bold text-white fs-30 fs-sm-22 me-auto mb-0">News</p>
+            <div class="d-md-flex d-none align-items-center gap-3 fs-20 fw-bold numbers3">
+              <div class="text-gray cursor-pointer active" data-number2="0">1</div>
+              <div class="text-gray cursor-pointer" data-number2="1">2</div>
+              <div class="text-gray cursor-pointer" data-number2="2">3</div>
+              <div class="text-gray cursor-pointer" data-number2="3">4</div>
+              <div class="text-gray cursor-pointer" data-number2="4">5</div>
+              <div class="text-gray cursor-pointer" data-number2="5">6</div>
+              <div class="text-gray cursor-pointer" data-number2="6">7</div>
+            </div>
+            <div class="d-flex align-items-center gap-40">
+              <svg class="cursor-pointer prevBtn3" width="21" height="30" viewBox="0 0 21 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5752 0L0 15L14.5752 30L20.0409 24.375L10.9314 15L20.0409 5.625L14.5752 0Z"
+                  fill="#D9D9D9" />
+              </svg>
+              <svg class="cursor-pointer nextBtn3" width="21" height="30" viewBox="0 0 21 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.58281 0L0 5.625L9.30469 15L0 24.375L5.58281 30L20.4703 15L5.58281 0Z" fill="#D9D9D9" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="mt-5 py-5 bg-black">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <ul class="m-0 p-0 list-unstyled">
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">Displays</a>
+            </li>
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">POS Products and Accessories</a>
+            </li>
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">About Us</a>
+            </li>
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">Downloads</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul class="m-0 p-0 list-unstyled">
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">Displays</a>
+            </li>
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">POS Products and Accessories</a>
+            </li>
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">About Us</a>
+            </li>
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">Downloads</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul class="mb-10 p-0 list-unstyled">
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">Contact</a>
+            </li>
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">info@karabinesh.com</a>
+            </li>
+            <li class="mb-10">
+              <a class="text-white fs-14 hover1">+98 21 72382220</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <a class="hover1">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.81583 0.09C10.4158 0.0166636 10.9258 0 15 0C19.075 0 19.5841 0.0174954 21.1833 0.09C22.7808 0.162505 23.8717 0.416673 24.8258 0.7875C25.8266 1.16429 26.7331 1.75465 27.4825 2.5175C28.2454 3.26673 28.8359 4.17336 29.2125 5.17417C29.5833 6.12833 29.8366 7.21917 29.91 8.81583C29.9834 10.4158 30 10.9258 30 15C30 19.0741 29.9825 19.5841 29.91 21.1842C29.8375 22.7808 29.5833 23.8717 29.2125 24.8258C28.8292 25.8117 28.3158 26.6491 27.4825 27.4825C26.7333 28.2454 25.8266 28.8359 24.8258 29.2125C23.8717 29.5833 22.7808 29.8366 21.1842 29.91C19.5841 29.9834 19.0741 30 15 30C10.9258 30 10.4158 29.9825 8.81583 29.91C7.21917 29.8375 6.12833 29.5833 5.17417 29.2125C4.18833 28.8292 3.35084 28.3158 2.5175 27.4825C1.75451 26.7333 1.16411 25.8266 0.7875 24.8258C0.416673 23.8717 0.163336 22.7808 0.09 21.1842C0.0166636 19.5841 0 19.075 0 15C0 10.925 0.0174954 10.4158 0.09 8.81667C0.162505 7.21917 0.416673 6.12833 0.7875 5.17417C1.16429 4.17342 1.75465 3.26684 2.5175 2.5175C3.26671 1.75451 4.17334 1.16411 5.17417 0.7875C6.12833 0.416673 7.21917 0.163336 8.81583 0.09ZM21.0616 2.79C19.48 2.71833 19.005 2.7025 15 2.7025C10.995 2.7025 10.52 2.71833 8.93834 2.79C7.47584 2.85667 6.68167 3.10083 6.15333 3.30667C5.45333 3.57833 4.95333 3.90333 4.42833 4.42833C3.90417 4.95333 3.57833 5.45333 3.30667 6.15333C3.10083 6.68167 2.85667 7.47584 2.79 8.93834C2.71833 10.52 2.7025 10.995 2.7025 15C2.7025 19.005 2.71833 19.48 2.79 21.0616C2.85667 22.5241 3.10083 23.3183 3.30667 23.8467C3.54697 24.4983 3.93026 25.0876 4.42833 25.5717C4.91228 26.0697 5.50174 26.453 6.15333 26.6933C6.68167 26.8992 7.47584 27.1433 8.93834 27.21C10.52 27.2817 10.9942 27.2975 15 27.2975C19.0058 27.2975 19.48 27.2817 21.0616 27.21C22.5241 27.1433 23.3183 26.8992 23.8467 26.6933C24.5467 26.4217 25.0467 26.0967 25.5717 25.5717C26.0697 25.0878 26.453 24.4983 26.6933 23.8467C26.8992 23.3183 27.1433 22.5241 27.21 21.0616C27.2817 19.48 27.2975 19.005 27.2975 15C27.2975 10.995 27.2817 10.52 27.21 8.93834C27.1433 7.47584 26.8992 6.68167 26.6933 6.15333C26.4217 5.45333 26.0967 4.95333 25.5717 4.42833C25.0467 3.90417 24.5467 3.57833 23.8467 3.30667C23.3183 3.10083 22.5241 2.85667 21.0616 2.79ZM13.0848 19.624C13.692 19.8755 14.3427 20.005 15 20.005C16.3275 20.005 17.6005 19.4776 18.539 18.539C19.4778 17.6005 20.0051 16.3274 20.0051 15C20.0051 13.6726 19.4778 12.3995 18.539 11.4609C17.6005 10.5223 16.3275 9.99499 15 9.99499C14.3427 9.99499 13.692 10.1245 13.0848 10.376C12.4774 10.6275 11.9257 10.9962 11.461 11.4609C10.9962 11.9257 10.6275 12.4774 10.376 13.0846C10.1245 13.6919 9.99505 14.3427 9.99505 15C9.99505 15.6573 10.1245 16.3081 10.376 16.9154C10.6275 17.5226 10.9962 18.0743 11.461 18.539C11.9257 19.0038 12.4774 19.3725 13.0848 19.624ZM9.54825 9.5482C10.9942 8.10229 12.9552 7.28999 15 7.28999C17.0449 7.28999 19.006 8.10229 20.4518 9.5482C21.8977 10.9941 22.71 12.9552 22.71 15C22.71 17.0448 21.8977 19.0058 20.4518 20.4518C19.006 21.8977 17.0449 22.71 15 22.71C12.9552 22.71 10.9942 21.8977 9.54825 20.4518C8.10235 19.0058 7.29004 17.0448 7.29004 15C7.29004 12.9552 8.10235 10.9941 9.54825 9.5482ZM24.4196 8.4387C24.7613 8.0969 24.9533 7.63335 24.9533 7.15C24.9533 6.66663 24.7613 6.20307 24.4196 5.86129C24.0777 5.51951 23.6142 5.3275 23.1308 5.3275C22.6475 5.3275 22.1839 5.51951 21.8422 5.86129C21.5003 6.20307 21.3083 6.66663 21.3083 7.15C21.3083 7.63335 21.5003 8.0969 21.8422 8.4387C22.1839 8.78048 22.6475 8.9725 23.1308 8.9725C23.6142 8.9725 24.0777 8.78048 24.4196 8.4387Z"
+                  fill="white" />
+                <script xmlns="" />
+              </svg>
+            </a>
+            <a class="hover1">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 2.50625C0 1.84155 0.264053 1.20408 0.734065 0.734065C1.20408 0.264053 1.84155 0 2.50625 0H27.4937C27.8229 0 28.1488 0.0648302 28.4527 0.190781C28.7569 0.316733 29.0331 0.501336 29.2659 0.734065C29.4986 0.966794 29.6832 1.24308 29.8092 1.54714C29.9351 1.85122 30 2.17712 30 2.50625V27.4937C30 27.8229 29.9351 28.1488 29.8092 28.4527C29.6832 28.7569 29.4986 29.0331 29.2659 29.2659C29.0331 29.4986 28.7569 29.6832 28.4527 29.8092C28.1488 29.9351 27.8229 30 27.4937 30H2.50625C1.84155 30 1.20408 29.7359 0.734065 29.2659C0.264053 28.7959 0 28.1585 0 27.4937V2.50625ZM11.875 11.4375H15.9375V13.4788C16.5231 12.3049 18.0237 11.25 20.2781 11.25C24.5993 11.25 25.625 13.5863 25.625 17.873V25.8125H21.25V18.8493C21.25 16.4082 20.6644 15.0312 19.175 15.0312C17.1094 15.0312 16.25 16.5156 16.25 18.8493V25.8125H11.875V11.4375ZM4.37499 25.625H8.74999V11.25H4.37499V25.625ZM9.37499 6.56248C9.37499 6.93183 9.30224 7.29756 9.1609 7.63878C9.01956 7.98001 8.81238 8.29006 8.55122 8.55122C8.29006 8.81238 7.98001 9.01956 7.63878 9.1609C7.29756 9.30224 6.93183 9.37499 6.56248 9.37499C6.19315 9.37499 5.82742 9.30224 5.4862 9.1609C5.14496 9.01956 4.83492 8.81238 4.57375 8.55122C4.31259 8.29006 4.10543 7.98001 3.96408 7.63878C3.82275 7.29756 3.74999 6.93183 3.74999 6.56248C3.74999 5.81657 4.04631 5.1012 4.57375 4.57375C5.1012 4.04631 5.81657 3.74999 6.56248 3.74999C7.30841 3.74999 8.02378 4.04631 8.55122 4.57375C9.07867 5.1012 9.37499 5.81657 9.37499 6.56248Z"
+                  fill="white" />
+                <script xmlns="" />
+              </svg>
+            </a>
+            <a class="hover1">
+              <svg width="45" height="30" viewBox="0 0 45 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M44.0354 4.70482C43.7877 3.80696 43.2932 2.98606 42.6016 2.32442C41.9097 1.66278 41.0451 1.18366 40.0942 0.935071C36.5752 0.00916047 22.4758 0.00916023 22.4758 0.00916023C16.5967 -0.0572305 10.7192 0.237321 4.88091 0.890979C3.92964 1.15772 3.06641 1.64789 2.37271 2.3152C1.67902 2.9825 1.17774 3.80492 0.916193 4.70482C0.285443 8.10409 -0.0207523 11.5496 0.00125847 14.9999C-0.0222616 18.4505 0.283946 21.8961 0.916193 25.2953C1.17236 26.1927 1.67256 27.0121 2.36767 27.6732C3.06278 28.3341 3.92888 28.8136 4.88091 29.0649C8.44682 29.9908 22.4758 29.9908 22.4758 29.9908C28.3627 30.0573 34.2481 29.7628 40.0942 29.109C41.0451 28.8605 41.9097 28.3814 42.6016 27.7197C43.2932 27.058 43.7877 26.2371 44.0354 25.3393C44.6823 21.9417 44.9964 18.4956 44.9739 15.0442C45.0224 11.5772 44.708 8.11403 44.0354 4.70482ZM17.995 21.4153V8.58481L29.725 14.9999L17.995 21.4153Z"
+                  fill="white" />
+                <script xmlns="" />
+              </svg>
+            </a>
+            <a class="hover1">
+              <svg width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M36.9123 3.55208C35.5549 4.15357 34.0967 4.55999 32.5637 4.74369C34.1276 3.80731 35.3273 2.32145 35.893 0.552726C34.4299 1.42083 32.8091 2.05159 31.0843 2.38973C29.7025 0.920126 27.7354 0 25.5571 0C21.3758 0 17.9847 3.39114 17.9847 7.5756C17.9847 8.16734 18.053 8.74282 18.1798 9.2988C11.8836 8.9818 6.30595 5.96619 2.57017 1.38507C1.91991 2.50678 1.546 3.80731 1.546 5.19237C1.546 7.81945 2.88393 10.1393 4.91438 11.4967C3.67237 11.4561 2.50515 11.1163 1.48423 10.5489V10.6465C1.48423 14.3156 4.09342 17.3767 7.55934 18.0725C6.92208 18.2448 6.25393 18.3359 5.56465 18.3359C5.07695 18.3359 4.60063 18.2903 4.13894 18.2026C5.10296 21.21 7.8991 23.4014 11.2138 23.46C8.6209 25.492 5.35494 26.7032 1.80774 26.7032C1.19649 26.7032 0.593364 26.6674 0 26.5975C3.35212 28.7482 7.33174 30 11.6072 30C25.5392 30 33.1554 18.461 33.1554 8.45346C33.1554 8.12832 33.1473 7.79994 33.1327 7.47481C34.612 6.40512 35.8963 5.0737 36.9091 3.55695L36.9123 3.55208Z"
+                  fill="white" />
+                <script xmlns="" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/swiper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/vanilla-tilt.js"></script>
+</body>
+
+</html>
