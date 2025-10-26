@@ -164,6 +164,9 @@ a {
 .mb-10{
     margin-bottom: 10px;
 }
+.mt-14{
+    margin-top: 14px;
+}
 .-mb-27{
     margin-bottom: -27px;
 }
@@ -192,13 +195,21 @@ a {
 .text-gray{
     color: #7E7D7D;
 }
+.text-gray2{
+    color: #454545;
+}
 /* left */
-
+.-left-15{
+    left: -15px;
+}
 
 /* right */
 
 
 /* top */
+.-top-28{
+    top: -28px;
+}
 
 /* bottom */
 
@@ -224,8 +235,14 @@ a {
 .border-gray{
     border: 1px solid #D9D9D9;
 }
+.border-l-gray{
+    border-left: 1px solid #D9D9D9;
+}
 .border-gray2{
     border: 1px solid #939292;
+}
+.border-gray3{
+    border: 1px solid #888787;
 }
 .border-black{
     border: 1px solid #3E3C3B;
@@ -240,6 +257,9 @@ a {
 }
 .bg-white-80{
     background-color: rgba(255, 255, 255, 0.81);
+}
+.bg-white-90{
+    background-color: rgba(255, 255, 255, 0.903);
 }
 .bg-gray-90{
     background-color: #d9d9d991;
@@ -300,7 +320,34 @@ a {
     height: 100% !important;
     z-index: 5;
 }
+#overlay2{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.195);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+    z-index: 14;
+}
+#overlay2.active{
+    opacity: 100%;
+    visibility: visible;
+}
+/* مخفی کردن همه مودال‌ها به صورت پیش‌فرض */
+#instaBox, #LinkdinBox, #YoutubeBox, #TwiterBox {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+/* کلاس active برای نمایش مودال */
+#instaBox.active, #LinkdinBox.active, #YoutubeBox.active, #TwiterBox.active {
+    display: block;
+}
 /* header */
 
 header{
@@ -309,6 +356,68 @@ header{
     padding-bottom: 14px;
     position: sticky;
     top: 0;
+}
+#showDropdownBtn{
+    position: relative;
+}
+.showDropdownBtn >div#after{
+    position: absolute;
+    bottom: -14px;
+  right: -10px;
+    width: 70px !important;
+    height: 56px !important;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 1px solid #888787;
+    border-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.904);
+    transition: all .4s;
+        opacity: 0%;
+    visibility: hidden;
+}
+#showDropdown:hover div#after{
+    opacity: 100%;
+    visibility: visible;
+}
+#dropdown{
+    transition: all .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+#dropdown > div{
+    transition: all .4s;
+    position: relative;
+    top: 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+#showDropdown:hover #dropdown > div{
+    top: 0;
+     opacity: 100%;
+    visibility: visible;
+}
+#showDropdown:hover #dropdown{
+     opacity: 100%;
+    visibility: visible;
+}
+/* accordion */
+.accordion-button:not(.collapsed) {
+  color: #212529;
+  background-color: transparent;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-item {
+  background-color: transparent;
+  border: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 /* swiper */
 
@@ -334,22 +443,11 @@ header{
   transform: translate(0, 0);
 }
 /* hover */
-
-.card {
-  transform-style: preserve-3d;
+.card{
+    transition: all .4s;
 }
-
-.card img.img {
-  transition: all .4s;
-  pointer-events: none;
-  z-index: 10!important;
-}
-.card:hover img.img {
-  transform: translate3d(-10%, -10%, 20px);
-}
-.card:hover .sneakers {
-  transform: translateZ(40px);
-  opacity: 0.85;
+.card:hover{
+    box-shadow: 1px 1px 16px #ec3238a0;
 }
 .hover1 svg path,.hover2{
     transition: all .4s;
@@ -381,8 +479,8 @@ header{
 @media (max-width: 1200px) {}
 
 @media (max-width: 992px) {
-   .w-lg-90{
-    width: 90px;
+   .w-lg-44{
+    width: 44px;
    }
    .top-lg-auto{
     top: auto !important;
@@ -395,6 +493,9 @@ header{
    }
       .h-lg-428{
     height: 428px;
+   }
+   .h-lg-366{
+    height: 366px;
    }
 }
 @media (max-width: 768px) {

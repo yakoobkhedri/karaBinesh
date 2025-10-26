@@ -217,3 +217,78 @@ var banner4 = new Swiper(".banner4", {
   spaceBetween: 0,
   slidesPerView: 1,
 });
+
+// social media
+// عناصر اصلی
+let overlay2 = document.getElementById('overlay2');
+
+// عناصر آیکون‌ها
+let insta = document.getElementById('insta');
+let linkedin = document.getElementById('linkedin');
+let youtube = document.getElementById('youtube');
+let twiter = document.getElementById('twiter');
+
+// عناصر مودال‌ها
+let instaBox = document.getElementById('instaBox');
+let LinkdinBox = document.getElementById('LinkdinBox');
+let YoutubeBox = document.getElementById('YoutubeBox');
+let TwiterBox = document.getElementById('TwiterBox');
+
+// آدرس‌های مقصد
+const socialLinks = {
+    insta: 'https://www.instagram.com',
+    linkedin: 'https://www.linkedin.com',
+    youtube: 'https://www.youtube.com',
+    twiter: 'https://www.twitter.com'
+};
+
+// تابع برای مخفی کردن همه مودال‌ها
+function hideAllModals() {
+    instaBox.classList.remove('active');
+    LinkdinBox.classList.remove('active');
+    YoutubeBox.classList.remove('active');
+    TwiterBox.classList.remove('active');
+}
+
+// تابع برای نمایش مودال و هدایت پس از 5 ثانیه
+function showModalAndRedirect(modalElement, redirectUrl) {
+    // مخفی کردن همه مودال‌های دیگر
+    hideAllModals();
+    
+    // نمایش مودال مورد نظر
+    modalElement.classList.add('active');
+    overlay2.classList.add('active');
+    
+    // هدایت پس از 5 ثانیه
+    setTimeout(() => {
+        window.location.href = redirectUrl;
+    }, 5000);
+}
+
+// اضافه کردن event listener برای هر آیکون
+insta.addEventListener('click', function() {
+    showModalAndRedirect(instaBox, socialLinks.insta);
+});
+
+linkedin.addEventListener('click', function() {
+    showModalAndRedirect(LinkdinBox, socialLinks.linkedin);
+});
+
+youtube.addEventListener('click', function() {
+    showModalAndRedirect(YoutubeBox, socialLinks.youtube);
+});
+
+twiter.addEventListener('click', function() {
+    showModalAndRedirect(TwiterBox, socialLinks.twiter);
+});
+
+// بستن مودال با کلیک روی overlay (اختیاری)
+overlay2.addEventListener('click', function(e) {
+    if (e.target === overlay2) {
+        overlay2.classList.remove('active');
+        hideAllModals();
+    }
+});
+
+  // aos
+AOS.init();
